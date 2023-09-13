@@ -1,5 +1,7 @@
 use clap::Parser;
-mod utils;
+mod persistence_calculator;
+
+use persistence_calculator::calculate_multiplicative_persistence;
 
 #[derive(Parser)]
 struct Args{
@@ -14,5 +16,5 @@ fn main() {
     let args = Args::parse();
     let max_value = args.max_value;
     let base = args.base;
-    println!("{}",utils::calculate_multiplicative_persistence(max_value, base))
+    println!("{}",calculate_multiplicative_persistence(max_value, base))
 }

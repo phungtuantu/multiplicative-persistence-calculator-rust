@@ -17,8 +17,3 @@ pub fn calculate_multiplicative_persistence(value: u64, base: u64) -> u8{
     }
     return steps;
 }
-
-pub fn find_next_value(current_value: u64, base: u64) -> u64{
-    // TODO: Find the next value for base 10
-    return 10;
-}
